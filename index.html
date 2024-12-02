@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="AM-Adapter">
+  <meta property="og:title" content="AM-Adapter"/>
+  <meta property="og:description" content="Appearance Matching Adapter for Exemplar-based Semantic Image Synthesis"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="AM-Adapter">
+  <meta name="twitter:description" content="Appearance Matching Adapter for Exemplar-based Semantic Image Synthesis">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>Appearance Matching Adapter for Exemplar-based Semantic Image Synthesis</title>
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">Appearance Matching Adapter for Exemplar-based Semantic Image Synthesis</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="" target="_blank">Siyoon Jin</a><sup>1</sup>,</span>
+              <span class="author-block">
+                <a href="" target="_blank">Jiyoung Kim</a><sup>1</sup>,</span>
+              <span class="author-block">
+                <a href="" target="_blank">Jisu Nam</a><sup>2</sup>,</span>
+              <span class="author-block">
+                <a href="" target="_blank">Dahyun Chung</a><sup>1</sup>,</span>
+                <br>
+              <span class="author-block">
+                <a href="" target="_blank">Heonjeong Chu</a><sup>3</sup>,</span>
+                <span class="author-block">
+                    <a href="" target="_blank">Joonhyung Park</a><sup>3</sup>,</span>
+                <span class="author-block">
+                    <a href="" target="_blank">Yeongseok Kim</a><sup>3</sup>,</span>
+        
+              <span class="author-block">
+                <a href="" target="_blank">Seungryong Kim</a><sup>2,†</sup>
+              </span>
+                <div>
+                </div>
+
+
+                </div>
+
+                  <div class="is-size-5 publication-authors">
+                      <span class="author-block"><sup>1</sup>Korea University, <sup>2</sup>KAIST</span>, <sup>3</sup>Hyundai Mobis</span>
+                      <br>
+                  </div>
+                  <div style="margin-top: 20px;">
+                      <span class="is-size-5 publication-venue">ArXiv 2024</span>
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                         <!-- Arxiv PDF link -->
+                      <span class="link-block">
+                        <a href="" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span>
+
+                    <!-- Supplementary PDF link -->
+                    <!-- <span class="link-block">
+                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                      </span>
+                      <span>Supplementary</span>
+                    </a>
+                  </span> -->
+
+                  <!-- Github link -->
+                  <span class="link-block">
+                    <a href="https://github.com/cvlab-kaist/AM-Adapter" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+                <!-- ArXiv abstract Link -->
+                <span class="link-block">
+                  <a href="" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>ArXiv</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Teaser video-->
+<section class="section hero teaser-image">
+  <div class="columns is-centered has-text-centered">
+    <div class="column" style="width: 100%; max-width: 1200px; ">
+      <h2 class="title is-3">AM-Adapter: Appearance Matching Adapter for Exemplar-based Semantic Image Synthesis</h2>
+      <!-- <div style="align-items: center;"> -->
+      <img src="static/assets/teaser.png"  class="method" style="max-width: 90%; height: auto; ">
+      <!-- </div> -->
+     
+      <p style="font-size: 20px; text-align: center;" id="slider-description">
+        Given an exemplar image including user-intended appearance and a target segmentation map guiding a semantic structure, our <b>AM-Adapter</b> generates high-quality images that preserve the detailed local appearance of the exemplar and accurate image structure defined by the segmentation maps. The proposed approach is versatile and can be applied to various applications, including: (b) image-to-image translation and (c) segmentation-based image editing.
+      </p>
+      <br>
+     
+    </div>
+  </div>
+</section>
+
+<style>
+  .teaser-image {
+    display: flex;
+    align-items: center; /* 비디오와 캡션 가로 중앙 정렬 */
+    text-align: center;
+  }
+  .teaser-video .video-grid {
+    display: grid; /* Grid layout 사용 */
+    grid-template-columns: repeat(4, 1fr); /* 한 행에 4개의 열 */
+    /* gap: 0px; 비디오 간 간격 */
+    justify-items: center; /* 아이템을 수평으로 중앙 정렬 */
+    align-items: flex-start; /* 캡션 포함 수직 정렬 */
+  }
+
+  .teaser-video .video-container {
+      display: flex;
+      flex-direction: column; /* 비디오와 캡션 세로 정렬 */
+      align-items: center; /* 비디오와 캡션 가로 중앙 정렬 */
+      text-align: center;
+      vertical-align: center;
+      max-width: 300px; /* 비디오 컨테이너 너비 제한 */
+      width: 100%; /* 컨테이너가 grid 정렬에 맞추어 조정 */
+  }
+
+  .teaser-video .video-container img {
+      height: 160px; /* 비디오 높이 고정 */
+      width: 100%; /* 비디오 컨테이너 크기와 동일 */
+      object-fit: cover; /* 비율 유지하며 채우기 */
+  }
+
+  .teaser-video .video-caption {
+      font-style: italic;
+      margin-top: 10px; /* 캡션과 비디오 간격 */
+      font-size: 14px; /* 캡션 글꼴 크기 */
+      word-wrap: break-word; /* 줄바꿈 허용 */
+      word-break: break-word; /* 긴 단어 줄바꿈 */
+  }
+</style>
+<!-- End teaser video -->
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Semantic image synthesis aims to generate images aligned with given semantic content while preserving the appearance of an exemplar image. Conventional structure-guidance models such as ControlNet cannot directly use exemplar images as input and rely solely on text prompts to control appearance, which fail to capture fine-grained details. Recent tuning-free approaches transfer local appearance through implicit cross-image matching in the augmented self-attention of pre-trained diffusion models but struggle with content-rich scenes involving large geometric deformations such as a driving scene. In this paper, we propose <b>appearance matching adapter (AM-Adapter)</b>, a learnable framework that enhances the cross-image matching in the augmented self-attention by integrating semantic information from segmentation maps. To further disentangle generation and matching, we employ a stage-wise training approach. First, we train the structure-guidance and generation networks, followed by training the AM-Adapter while keeping the other networks frozen. During inference, we introduce an automatic exemplar retrieval method to efficiently select exemplar image-segmentation pairs, maximizing matchable regions with the synthesized image. Despite the limited number of learnable parameters, our method achieves state-of-the-art performance, excelling in preserving semantic alignment and local appearance. Extensive ablation studies validate our design choices. Code and pre-trained weights will be publicly available.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+<section class="hero section">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column is-full-width">
+          <h2 class="title is-3 has-text-centered">Motivation</h2>
+          <div style="display: flex; align-items: center; justify-content: center; gap: 20px; flex-wrap: wrap;">
+            <img src="static/assets/motivation.png" alt="Motivation image 1" class="method" style="max-width: 90%; height: auto; display: block;">
+          </div>
+          <h2 class="content has-text-justified" style="margin-top: 20px;">
+            Semantic image synthesis results by (a) ControlNeXt (b) IP-Adapter + ControlNet, (c) Ctrl-X, and (d) <b>AM-Adapter</b>. Compared to prior studies that often fail to capture local exemplar's appearance or struggle with finding accurate matching between exemplar image and target segmentation, our AM-Adapter precisely matches exemplars to targets in content-rich scenarios, preserving local details while maintaining alignment with the target structure.
+          </h2>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<section class="hero section">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column is-full-width">
+          <h2 class="title is-3 has-text-centered">Architecture</h2>
+          <div class="hero-body" style="position: relative; text-align: center;">
+            <!-- 화살표 버튼 (왼쪽) -->
+            <button id="arrow-left" style="position: absolute; top: 50%; left: -30px; transform: translateY(-50%); background: none; border: none; cursor: pointer; z-index: 10;">
+              <i class="fas fa-arrow-left" style="font-size: 24px; color: #333;"></i>
+            </button>
+            
+            <!-- 이미지 컨테이너 -->
+            <div style="position: relative;">
+              <img src="static/assets/main_architecture.png" alt="Method image" class="method" id="architecture-main-image" style="transition: opacity 0.5s ease-in-out; max-width: 100%;">
+              <!-- <img src="static/assets/adapter.png" alt="Method image" class="method" id="rchitecture-main-image" style="transition: opacity 0.5s ease-in-out; max-width: 100%;"> -->
+              <!-- 캡션 -->
+              <p id="image-caption" style="margin-top: 10px; font-size: 16px; font-style: italic; color: #555;">Overall pipeline of the proposed framework</p>
+            </div>
+  
+            <!-- 화살표 버튼 (오른쪽) -->
+            <button id="arrow-right" style="position: absolute; top: 50%; right: -30px; transform: translateY(-50%); background: none; border: none; cursor: pointer; z-index: 10;">
+              <i class="fas fa-arrow-right" style="font-size: 24px; color: #333;"></i>
+            </button>
+          </div>
+          
+          <h2 class="content has-text-justified">
+            
+          </h2>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- <script>
+    // 이미지와 캡션 리스트
+    const images = [
+      {
+        src: 'static/assets/main_architecture.png',
+        caption: 'Overall architecture'
+      },
+      {
+        src: 'static/assets/adapter.png',
+        caption: 'Appearance Matching Adapter'
+      }
+    ];
+  
+    let currentIndex = 0;
+  
+    function updateImageAndCaption(index) {
+      const mainImage = document.getElementById('architecture-main-image');
+      const imageCaption = document.getElementById('image-caption');
+  
+      // 이미지 페이드아웃
+      mainImage.style.opacity = '0';
+  
+      // 이미지 및 캡션 업데이트
+      setTimeout(() => {
+        mainImage.src = images[index].src;
+        imageCaption.textContent = images[index].caption;
+  
+        // module.jpg의 크기 조정
+        if (images[index].src.includes('adapter.png')) {
+          mainImage.style.maxWidth = '50%'; // 이미지 크기 줄이기
+        } else {
+          mainImage.style.maxWidth = '100%'; // 기본 크기
+        }
+  
+        // 이미지 페이드인
+        mainImage.style.opacity = '1';
+      }, 500);
+    }
+  
+    const gallery = [
+      {
+        src: 'static/assets/main_qual.png',
+        caption: 'Qualitative comparisons with previous methods'
+      },
+      {
+        src: 'static/assets/ours_qual.png',
+        caption: 'Additional qualitative results of our AM-Adapter'
+      }
+    ];
+    function updateImageAndCaption_gallery(index) {
+      const mainImage = document.getElementById('qual-main-image');
+      const imageCaption = document.getElementById('image-caption');
+  
+      // 이미지 페이드아웃
+      mainImage.style.opacity = '0';
+  
+      // 이미지 및 캡션 업데이트
+      setTimeout(() => {
+        mainImage.src = images[index].src;
+        imageCaption.textContent = images[index].caption;
+  
+        // module.jpg의 크기 조정
+        // if (images[index].src.includes('adapter.png')) {
+        //   mainImage.style.maxWidth = '50%'; // 이미지 크기 줄이기
+        // } else {
+        //   mainImage.style.maxWidth = '100%'; // 기본 크기
+        // }
+        mainImage.style.maxWidth = '90%';
+        // 이미지 페이드인
+        mainImage.style.opacity = '1';
+      }, 500);
+    }
+  
+    // 왼쪽 화살표 클릭 이벤트
+    document.getElementById('arrow-left').addEventListener('click', function () {
+      currentIndex = (currentIndex - 1 + images.length) % images.length; // 이전 이미지
+      updateImageAndCaption(currentIndex);
+    });
+  
+    // 오른쪽 화살표 클릭 이벤트
+    document.getElementById('arrow-right').addEventListener('click', function () {
+      currentIndex = (currentIndex + 1) % images.length; // 다음 이미지
+      updateImageAndCaption(currentIndex);
+    });
+
+    document.getElementById('arrow-left-gallery').addEventListener('click', function () {
+      currentIndex = (currentIndex - 1 + images.length) % images.length; // 이전 이미지
+      updateImageAndCaption_gallery(currentIndex);
+    });
+  
+    // 오른쪽 화살표 클릭 이벤트
+    document.getElementById('arrow-right-gallery').addEventListener('click', function () {
+      currentIndex = (currentIndex + 1) % images.length; // 다음 이미지
+      updateImageAndCaption_gallery(currentIndex);
+    });
+
+  </script> -->
+
+<script>
+  // 이미지와 캡션 리스트
+  const images = [
+    {
+      src: 'static/assets/main_architecture.png',
+      caption: 'Overall architecture'
+    },
+    {
+      src: 'static/assets/adapter.png',
+      caption: 'Appearance Matching Adapter'
+    }
+  ];
+
+  let currentIndex = 0;
+
+  function updateImageAndCaption(index) {
+    const mainImage = document.getElementById('architecture-main-image');
+    const imageCaption = document.getElementById('image-caption');
+
+    // 이미지 페이드아웃
+    mainImage.style.opacity = '0';
+
+    // 이미지 및 캡션 업데이트
+    setTimeout(() => {
+      mainImage.src = images[index].src;
+      imageCaption.textContent = images[index].caption;
+
+      // module.jpg의 크기 조정
+      if (images[index].src.includes('adapter.png')) {
+        mainImage.style.maxWidth = '50%'; // 이미지 크기 줄이기
+      } else {
+        mainImage.style.maxWidth = '100%'; // 기본 크기
+      }
+
+      // 이미지 페이드인
+      mainImage.style.opacity = '1';
+    }, 500);
+  }
+
+  
+  // 왼쪽 화살표 클릭 이벤트
+  document.getElementById('arrow-left').addEventListener('click', function () {
+    currentIndex = (currentIndex - 1 + images.length) % images.length; // 이전 이미지
+    updateImageAndCaption(currentIndex);
+  });
+
+  // 오른쪽 화살표 클릭 이벤트
+  document.getElementById('arrow-right').addEventListener('click', function () {
+    currentIndex = (currentIndex + 1) % images.length; // 다음 이미지
+    updateImageAndCaption(currentIndex);
+  });
+
+  
+
+</script>
+<!-- Qualitative Results Section with Slider Functionality -->
+<section class="section hero qualitative-results">
+  <div class="columns is-centered has-text-centered">
+    <div class="column is-four-fifths">
+      <h2 class="title is-3">Qualitative Results</h2>
+      <!-- <img src="" style="transition: opacity 0.5s ease-in-out; max-width: 100%;"> -->
+
+              <div class="hero-body" style="position: relative; text-align: center;">
+                <!-- 화살표 버튼 (왼쪽) -->
+                <button id="arrow-left-gallery" style="position: absolute; top: 50%; left: -30px; transform: translateY(-50%); background: none; border: none; cursor: pointer; z-index: 10;">
+                  <i class="fas fa-arrow-left" style="font-size: 24px; color: #333;"></i>
+                </button>
+                
+                <!-- 이미지 컨테이너 -->
+                <div style="position: relative;">
+                  <img src="static/assets/main_qual.png" alt="Qual image" class="qual" id="qual-main-image" style="transition: opacity 0.5s ease-in-out; max-width: 90%;">
+                  <!-- <img src="static/assets/adapter.png" alt="Method image" class="method" id="rchitecture-main-image" style="transition: opacity 0.5s ease-in-out; max-width: 100%;"> -->
+                  <!-- 캡션 -->
+                  <p id="image-caption-gallery" style="margin-top: 10px; font-size: 16px; font-style: italic; color: #555;">Qualitative comparisons with previous methods</p>
+                </div>
+      
+                <!-- 화살표 버튼 (오른쪽) -->
+                <button id="arrow-right-gallery" style="position: absolute; top: 50%; right: -30px; transform: translateY(-50%); background: none; border: none; cursor: pointer; z-index: 10;">
+                  <i class="fas fa-arrow-right" style="font-size: 24px; color: #333;"></i>
+                </button>
+              </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  const gallery = [
+    {
+      src: 'static/assets/main_qual.png',
+      caption: 'Qualitative comparisons with previous methods on BDD100K and CityScapes dataset.'
+    },
+    {
+      src: 'static/assets/add_qual.png',
+      caption: 'Additional qualitative comparisons with previous methods on BDD100K dataset.'
+    },
+    {
+      src: 'static/assets/ours_qual.png',
+      caption: 'Additional qualitative results of our AM-Adapter'
+    },
+
+  ];
+  let galleryIndex = 0;
+  function updateImageAndCaption_gallery(index) {
+    const mainImage = document.getElementById('qual-main-image');
+    const imageCaption = document.getElementById('image-caption-gallery');
+
+    // 이미지 페이드아웃
+    mainImage.style.opacity = '0';
+
+    // 이미지 및 캡션 업데이트
+    setTimeout(() => {
+      mainImage.src = gallery[index].src;
+      imageCaption.textContent = gallery[index].caption;
+      mainImage.style.maxWidth = '90%';
+      // 이미지 페이드인
+      mainImage.style.opacity = '1';
+    }, 1000);
+  }
+  document.getElementById('arrow-left-gallery').addEventListener('click', function () {
+    galleryIndex = (galleryIndex - 1 + gallery.length) % gallery.length; // 이전 이미지
+    updateImageAndCaption_gallery(galleryIndex);
+  });
+
+  // 오른쪽 화살표 클릭 이벤트
+  document.getElementById('arrow-right-gallery').addEventListener('click', function () {
+    galleryIndex = (galleryIndex + 1) % gallery.length; // 다음 이미지
+    updateImageAndCaption_gallery(galleryIndex);
+  });
+</script>
+<style>
+/* Video Group 1 Styles */
+.video-group.group-1 {
+  margin-left: -70px;
+}
+.video-group.group-1 .dshmp-label {
+  writing-mode: vertical;
+    transform: rotate(270deg);
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 30px;
+}
+.video-group.group-1 .ours-label {
+  writing-mode: vertical;
+    transform: rotate(270deg);
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 30px;
+    padding-left: 35px;
+}
+.video-group.group-1 .video-container{
+  margin: 0 auto; /* 가로 중앙 정렬 */
+}
+.video-group.group-1 .video-container img {
+  max-height: 140px; /* GIF 최대 높이 */
+  object-fit: contain;
+  display: block;
+  margin: auto;
+}
+/* Video Group 2 Styles */
+.video-group.group-2 {
+  margin-left: -60px;
+}
+.video-group.group-2 .dshmp-label {
+  writing-mode: vertical;
+    transform: rotate(270deg);
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 20px;
+}
+.video-group.group-2 .ours-label {
+  writing-mode: vertical;
+    transform: rotate(270deg);
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+/* Video Group 3 Styles */
+.video-group.group-3 {
+  margin-left: -80px;
+}
+.video-group.group-3 .dshmp-label {
+  writing-mode: vertical;
+    transform: rotate(270deg);
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 50px;
+}
+.video-group.group-3 .ours-label {
+  writing-mode: vertical;
+    transform: rotate(270deg);
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 50px;
+    padding-left: 35px;
+}
+
+  .qualitative-results .rotated-text {
+    writing-mode: vertical;
+    transform: rotate(270deg);
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 80px;
+  }
+  .qualitative-results .video-caption {
+    font-style: italic;
+    font-size: 14px;
+    max-width: 220px; /* 캡션 최대 너비 설정 */
+    word-wrap: break-word; /* 너비 초과 시 줄바꿈 */
+    text-align: center;
+    margin: auto;
+  }
+  .qualitative-results .video-container {
+    margin: 0 auto; /* 가로 중앙 정렬 */
+  }
+  .qualitative-results .video-container img {
+    max-height: 150px; /* GIF 최대 높이 */
+    object-fit: contain;
+    display: block;
+    margin: auto;
+  }
+  .qualitative-results table {
+    border-spacing: -10px;
+  }
+  </style>
+
+<script>
+const videoGroups = document.querySelectorAll(".video-group");
+let currentGroupIndex = 0;
+
+function updateGroup(newIndex) {
+  videoGroups[currentGroupIndex].style.opacity = "0";
+  setTimeout(() => {
+    videoGroups[currentGroupIndex].style.display = "none";
+    videoGroups[newIndex].style.display = "block";
+    setTimeout(() => {
+      videoGroups[newIndex].style.opacity = "1";
+    }, 10);
+    currentGroupIndex = newIndex;
+  }, 500);
+}
+
+document.getElementById("arrow-left-qual").addEventListener("click", () => {
+  const newIndex = (currentGroupIndex - 1 + videoGroups.length) % videoGroups.length;
+  updateGroup(newIndex);
+});
+
+document.getElementById("arrow-right-qual").addEventListener("click", () => {
+  const newIndex = (currentGroupIndex + 1) % videoGroups.length;
+  updateGroup(newIndex);
+});
+</script>
+<!-- End of Qualitative Results -->
+
+
+<section class="hero section quantitative-results">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3 has-text-centered">Quantitative Results</h2>
+        <span class="content has-text-centered highlighted-text">
+        </span>
+        <figure class="image is-centered">
+          <img src="static/assets/quan.png"  alt="Main Quantitative Results" class="method main-quan">
+          <figcaption class="has-text-centered caption">Quantitative comparison on previous methods.</figcaption>
+          The best-performing results are highlighted in <span style="background-color:#F49193">red</span>, while the second-best results are shaded in <span style="background-color:#FFE599">yellow</span>.
+        </figure>
+  
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .quantitative-results .main-quan {
+    max-width: 100%; /* 원하는 크기로 조정 */
+    height: auto;   /* 비율 유지 */
+    margin: 0 auto; /* 가로 중앙 정렬 */
+    display: block; /* 중앙 정렬 보장 */
+  }
+
+  .quantitative-results .module {
+    max-width: 75%; /* 원하는 크기로 조정 */
+    height: auto;   /* 비율 유지 */
+    margin: 0 auto; /* 가로 중앙 정렬 */
+    display: block; /* 중앙 정렬 보장 */
+  }
+
+  .quantitative-results figure {
+    margin-bottom: 30px; /* 두 figure 사이 간격 추가 */
+  }
+
+  .quantitative-results .caption {
+    font-size: 0.8rem; /* 캡션 텍스트 크기 조정 */
+    font-weight: 500;  /* 캡션 텍스트 굵기 조정 */
+    margin-top: 5px;   /* 이미지와 캡션 사이 간격 추가 */
+  }
+
+  .quantitative-results .highlighted-text {
+    text-align: center; /* 중앙 정렬 */
+    display: block;     /* 블록 요소로 처리 */
+    margin-bottom: 20px; /* 텍스트와 이미지 사이 간격 */
+  }
+</style>
+
+
+
+<!-- BibTex citation -->
+  <!-- <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@misc{shin2024openvocabularysemanticsegmentationsemantic,
+      title={Referring Video Object Segmentation via Language Aligned Track Selection}, 
+      author={Heeseong Shin and Chaehyun Kim and Sunghwan Hong and Seokju Cho and Anurag Arnab and Paul Hongsuck Seo and Seungryong Kim},
+      year={2024},
+      eprint={2409.19846},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2409.19846}, 
+}</code></pre>
+    </div>
+</section> -->
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
