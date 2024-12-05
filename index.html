@@ -74,7 +74,7 @@
               <span class="author-block">
                 <a href="" target="_blank">Heonjeong Chu</a><sup>3</sup>,</span>
               <span class="author-block">
-                <a href="" target="_blank">Seungryong Kim</a><sup>2,†</sup>
+                <a href="" target="_blank">Seungryong Kim</a><sup>2</sup>
               </span>
                 <div>
                 </div>
@@ -153,7 +153,7 @@
       <!-- </div> -->
      
       <p style="font-size: 20px; text-align: center;" id="slider-description">
-        Given an exemplar image including user-intended appearance and a target segmentation map guiding a semantic structure, our <b>AM-Adapter</b> generates high-quality images that preserve the detailed local appearance of the exemplar and accurate image structure defined by the segmentation maps. The proposed approach is versatile and can be applied to various applications, including: (b) image-to-image translation and (c) segmentation-based image editing.
+        (a) Given an exemplar image representing the user-intended appearance and a target segmentation map guiding the semantic structure, our <b>AM-Adapter</b> generates high-quality images that preserve the detailed local appearance of the exemplar and maintain the accurate image structure defined by the segmentation map. We demonstrate the versatility of our method in various applications, including (b) image-to-image translation and (c) segmentation-based image editing.
       </p>
       <br>
      
@@ -209,7 +209,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Semantic image synthesis aims to generate images aligned with given semantic content while preserving the appearance of an exemplar image. Conventional structure-guidance models such as ControlNet cannot directly use exemplar images as input and rely solely on text prompts to control appearance, which fail to capture fine-grained details. Recent tuning-free approaches transfer local appearance through implicit cross-image matching in the augmented self-attention of pre-trained diffusion models but struggle with content-rich scenes involving large geometric deformations such as a driving scene. In this paper, we propose <b>appearance matching adapter (AM-Adapter)</b>, a learnable framework that enhances the cross-image matching in the augmented self-attention by integrating semantic information from segmentation maps. To further disentangle generation and matching, we employ a stage-wise training approach. First, we train the structure-guidance and generation networks, followed by training the AM-Adapter while keeping the other networks frozen. During inference, we introduce an automatic exemplar retrieval method to efficiently select exemplar image-segmentation pairs, maximizing matchable regions with the synthesized image. Despite the limited number of learnable parameters, our method achieves state-of-the-art performance, excelling in preserving semantic alignment and local appearance. Extensive ablation studies validate our design choices. Code and pre-trained weights will be publicly available.
+            Exemplar-based semantic image synthesis aims to generate images aligned with given semantic content while preserving the appearance of an exemplar image. Conventional structure-guidance models, such as ControlNet, are limited in that they cannot directly utilize exemplar images as input, relying instead solely on text prompts to control appearance. Recent tuning-free approaches address this limitation by transferring local appearance from the exemplar image to the synthesized image through implicit cross-image matching in the augmented self-attention mechanism of pre-trained diffusion models. However, these methods face challenges when applied to content-rich scenes with significant geometric deformations, such as driving scenes. In this paper, we propose the <b>Appearance Matching Adapter (AM-Adapter)</b>, a learnable framework that enhances cross-image matching within augmented self-attention by incorporating semantic information from segmentation maps. To effectively disentangle generation and matching processes, we adopt a stage-wise training approach. Initially, we train the structure-guidance and generation networks, followed by training the AM-Adapter while keeping the other networks frozen. During inference, we introduce an automated exemplar retrieval method to efficiently select exemplar image-segmentation pairs. Despite utilizing a limited number of learnable parameters, our method achieves state-of-the-art performance, excelling in both semantic alignment preservation and local appearance fidelity. Extensive ablation studies further validate our design choices. Code and pre-trained weights will be publicly available.
           </p>
         </div>
       </div>
@@ -250,7 +250,7 @@
               <img src="static/assets/main_architecture.png" alt="Method image" class="method" id="architecture-main-image" style="transition: opacity 0.5s ease-in-out; max-width: 100%;">
               <!-- <img src="static/assets/adapter.png" alt="Method image" class="method" id="rchitecture-main-image" style="transition: opacity 0.5s ease-in-out; max-width: 100%;"> -->
               <!-- 캡션 -->
-              <p id="image-caption" style="margin-top: 10px; font-size: 16px; font-style: italic; color: #555;">Overall pipeline of the proposed framework</p>
+              <p id="image-caption" style="margin-top: 10px; font-size: 16px; font-style: italic; color: #555;">Overall architecture of the proposed framework</p>
             </div>
   
             <!-- 화살표 버튼 (오른쪽) -->
@@ -421,32 +421,29 @@
 
 </script>
 <!-- Qualitative Results Section with Slider Functionality -->
+
 <section class="section hero qualitative-results">
   <div class="columns is-centered has-text-centered">
     <div class="column is-four-fifths">
       <h2 class="title is-3">Qualitative Results</h2>
       <!-- <img src="" style="transition: opacity 0.5s ease-in-out; max-width: 100%;"> -->
+        <div class="hero-body" style="position: relative; text-align: center;">
+          <img src="static/assets/main_qual.png">
+          <p id="caption" style="margin-top: 10px; font-size: 16px; font-style: italic; color: #555;"><b>Qualitative Comparisons on BDD100K and Cityscapes.</b> Compared to previous methods that fail to transfer local appearance or find accurate matching, AM-Adapter effectively achieves precise matching in content-rich, complex scenes.</p>
 
-              <div class="hero-body" style="position: relative; text-align: center;">
-                <!-- 화살표 버튼 (왼쪽) -->
-                <button id="arrow-left-gallery" style="position: absolute; top: 50%; left: -30px; transform: translateY(-50%); background: none; border: none; cursor: pointer; z-index: 10;">
-                  <i class="fas fa-arrow-left" style="font-size: 24px; color: #333;"></i>
-                </button>
-                
-                <!-- 이미지 컨테이너 -->
-                <div style="position: relative;">
-                  <img src="static/assets/main_qual.png" alt="Qual image" class="qual" id="qual-main-image" style="transition: opacity 0.5s ease-in-out; max-width: 90%;">
-                  <!-- <img src="static/assets/adapter.png" alt="Method image" class="method" id="rchitecture-main-image" style="transition: opacity 0.5s ease-in-out; max-width: 100%;"> -->
-                  <!-- 캡션 -->
-                  <p id="image-caption-gallery" style="margin-top: 10px; font-size: 16px; font-style: italic; color: #555;">Qualitative comparisons with previous methods</p>
-                </div>
-      
-                <!-- 화살표 버튼 (오른쪽) -->
-                <button id="arrow-right-gallery" style="position: absolute; top: 50%; right: -30px; transform: translateY(-50%); background: none; border: none; cursor: pointer; z-index: 10;">
-                  <i class="fas fa-arrow-right" style="font-size: 24px; color: #333;"></i>
-                </button>
-              </div>
-    </div>
+
+        </div>
+        <div class="hero-body" style="position: relative; text-align: center;">
+          <img src="static/assets/ours_qual.png">
+          <p id="caption" style="margin-top: 10px; font-size: 16px; font-style: italic; color: #555;"><b>Additional Qualitative Results of AM-Adapter.</b> Visualization of results generated by <b>AM-Adapter</b> across various scenarios.</p>
+
+        </div>
+        <div class="hero-body" style="position: relative; text-align: center;">
+          <img src="static/assets/add_qual.png">
+          <p id="caption" style="margin-top: 10px; font-size: 16px; font-style: italic; color: #555;"><b>Qualitative Comparisons with Other Models.</b> Additional qualitative comparison on BDD100K dataset with previous methods</p>
+
+        </div>
+
   </div>
 </section>
 
@@ -629,7 +626,7 @@ document.getElementById("arrow-right-qual").addEventListener("click", () => {
         </span>
         <figure class="image is-centered">
           <img src="static/assets/quan.png"  alt="Main Quantitative Results" class="method main-quan">
-          <figcaption class="has-text-centered caption">Quantitative comparison on previous methods.</figcaption>
+          <!-- <figcaption class="has-text-centered caption">Quantitative comparison on previous methods.</figcaption> -->
           The best-performing results are highlighted in <span style="background-color:#F49193">red</span>, while the second-best results are shaded in <span style="background-color:#FFE599">yellow</span>.
         </figure>
   
