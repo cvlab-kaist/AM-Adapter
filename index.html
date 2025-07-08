@@ -24,7 +24,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>Appearance Matching Adapter for Exemplar-based Semantic Image Synthesis</title>
+  <title>AM-Adapter:Appearance Matching Adapter for Exemplar-based Semantic Image Synthesis in-the-Wild</title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
@@ -54,17 +54,17 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Appearance Matching Adapter for Exemplar-based Semantic Image Synthesis</h1>
+            <h1 class="title is-1 publication-title">AM-Adapter:Appearance Matching Adapter for Exemplar-based Semantic Image Synthesis in-the-Wild</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
                 <a href="" target="_blank">Siyoon Jin</a><sup>1</sup>,</span>
               <span class="author-block">
-                <a href="" target="_blank">Jisu Nam</a><sup>2</sup>,</span>
+                <a href="" target="_blank">Jisu Nam</a><sup>1</sup>,</span>
               <span class="author-block">
                 <a href="" target="_blank">Jiyoung Kim</a><sup>1</sup>,</span>
               <span class="author-block">
-                <a href="" target="_blank">Dahyun Chung</a><sup>1</sup>,</span>
+                <a href="" target="_blank">Dahyun Chung</a><sup>2</sup>,</span>
                 <br>
               <span class="author-block">
                 <a href="" target="_blank">Yeongseok Kim</a><sup>3</sup>,</span>
@@ -74,7 +74,7 @@
               <span class="author-block">
                 <a href="" target="_blank">Heonjeong Chu</a><sup>3</sup>,</span>
               <span class="author-block">
-                <a href="" target="_blank">Seungryong Kim</a><sup>2</sup>
+                <a href="" target="_blank">Seungryong Kim</a><sup>1</sup>
               </span>
                 <div>
                 </div>
@@ -83,11 +83,11 @@
                 </div>
 
                   <div class="is-size-5 publication-authors">
-                      <span class="author-block"><sup>1</sup>Korea University, <sup>2</sup>KAIST</span>, <sup>3</sup>Hyundai Mobis</span>
+                      <span class="author-block"><sup>1</sup>KAIST AI, <sup>2</sup>Korea University</span>, <sup>3</sup>Hyundai Mobis</span>
                       <br>
                   </div>
                   <div style="margin-top: 20px;">
-                      <span class="is-size-5 publication-venue">ArXiv 2024</span>
+                      <span class="is-size-5 publication-venue">ICCV 2025</span>
                   </div>
 
                   <div class="column has-text-centered">
@@ -209,7 +209,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Exemplar-based semantic image synthesis aims to generate images aligned with given semantic content while preserving the appearance of an exemplar image. Conventional structure-guidance models, such as ControlNet, are limited in that they cannot directly utilize exemplar images as input, relying instead solely on text prompts to control appearance. Recent tuning-free approaches address this limitation by transferring local appearance from the exemplar image to the synthesized image through implicit cross-image matching in the augmented self-attention mechanism of pre-trained diffusion models. However, these methods face challenges when applied to content-rich scenes with significant geometric deformations, such as driving scenes. In this paper, we propose the <b>Appearance Matching Adapter (AM-Adapter)</b>, a learnable framework that enhances cross-image matching within augmented self-attention by incorporating semantic information from segmentation maps. To effectively disentangle generation and matching processes, we adopt a stage-wise training approach. Initially, we train the structure-guidance and generation networks, followed by training the AM-Adapter while keeping the other networks frozen. During inference, we introduce an automated exemplar retrieval method to efficiently select exemplar image-segmentation pairs. Despite utilizing a limited number of learnable parameters, our method achieves state-of-the-art performance, excelling in both semantic alignment preservation and local appearance fidelity. Extensive ablation studies further validate our design choices. Code and pre-trained weights will be publicly available.
+            Exemplar-based semantic image synthesis generates images aligned with semantic content while preserving the appearance of an exemplar. Conventional structure-guidance models like ControlNet, are limited as they rely solely on text prompts to control appearance and cannot utilize exemplar images as input. Recent tuning-free approaches address this by transferring local appearance via implicit cross-image matching in the augmented self-attention mechanism of pre-trained diffusion models. However, prior works are often restricted to single-object cases or foreground object appearance transfer, struggling with complex scenes involving multiple objects. To overcome this, we propose <b>AM-Adapter</b> (<b>A</b>ppearance <b>M</b>atching <b>Adapter</b>) to address exemplar-based semantic image synthesis in-the-wild, enabling multi-object appearance transfer from a single scene-level image. AM-Adapter automatically transfers local appearances from the scene-level input. AM-Adapter alternatively provides controllability to map user-defined object details to specific locations in the synthesized images. Our learnable framework enhances cross-image matching within augmented self-attention by integrating semantic information from segmentation maps. To disentangle generation and matching, we adopt stage-wise training. We first train the structure-guidance and generation networks, followed by training the matching adapter while keeping the others frozen. During inference, we introduce an automated exemplar retrieval method for selecting exemplar image-segmentation pairs efficiently. Despite utilizing minimal learnable parameters, AM-Adapter achieves state-of-the-art performance, excelling in both semantic alignment and local appearance fidelity. Extensive ablations validate our design choices.
           </p>
         </div>
       </div>
@@ -669,22 +669,23 @@ document.getElementById("arrow-right-qual").addEventListener("click", () => {
 
 
 
-<!-- BibTex citation -->
-  <!-- <section class="section" id="BibTeX">
-    <div class="container is-max-desktop content">
-      <h2 class="title">BibTeX</h2>
-      <pre><code>@misc{shin2024openvocabularysemanticsegmentationsemantic,
-      title={Referring Video Object Segmentation via Language Aligned Track Selection}, 
-      author={Heeseong Shin and Chaehyun Kim and Sunghwan Hong and Seokju Cho and Anurag Arnab and Paul Hongsuck Seo and Seungryong Kim},
-      year={2024},
-      eprint={2409.19846},
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@misc{jin2025appearancematchingadapterexemplarbased,
+      title={Appearance Matching Adapter for Exemplar-based Semantic Image Synthesis in-the-Wild}, 
+      author={Siyoon Jin and Jisu Nam and Jiyoung Kim and Dahyun Chung and Yeong-Seok Kim and Joonhyung Park and Heonjeong Chu and Seungryong Kim},
+      year={2025},
+      eprint={2412.03150},
       archivePrefix={arXiv},
       primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2409.19846}, 
-}</code></pre>
+      url={https://arxiv.org/abs/2412.03150}, 
+}
+</code></pre>
     </div>
-</section> -->
-<!--End BibTex citation -->
+</section> 
+
 
 
   <footer class="footer">
