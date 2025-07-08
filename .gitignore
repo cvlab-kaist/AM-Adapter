@@ -1,5 +1,4 @@
 checkpoints/
-*.png 
 mlruns/
 __pycache__
 bdd_0906/
