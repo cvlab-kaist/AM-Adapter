@@ -1,6 +1,6 @@
 
 <div align="center">
-<h1> [ICCV2025] AM-Adapter: Appearance Matching Adapter for Exemplar-based Image Synthesis in-the-Wild </h1>
+<h1> [ICCV2025] AM-Adapter: Appearance Matching Adapter for Exemplar-based Semantic Image Synthesis in-the-Wild </h1>
 
 
 [**Siyoon Jin**](https://scholar.google.com/citations?user=rXRHxkwAAAAJ&hl=ko&oi=ao)<sup>1</sup>, [**Jisu Nam**](https://scholar.google.com/citations?user=xakYe8MAAAAJ&hl=en)<sup>1</sup>, [**Jiyoung Kim**](https://scholar.google.co.kr/citations?user=DqG-ybIAAAAJ&hl=ko)<sup>1</sup>, [**Dahyun Chung**](https://scholar.google.com/citations?user=EU52riMAAAAJ&hl=ko&oi=sra)<sup>2</sup>, 
