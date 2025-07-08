@@ -3,7 +3,9 @@
 <h1> [ICCV2025] AM-Adapter: Appearance Matching Adapter for Exemplar-based Image Synthesis in-the-Wild </h1>
 
 
-[**Siyoon Jin**](https://scholar.google.com/citations?user=rXRHxkwAAAAJ&hl=ko&oi=ao)<sup>1</sup>, [**Jisu Nam**](https://scholar.google.com/citations?user=xakYe8MAAAAJ&hl=en)<sup>1</sup>, [**Jiyoung Kim**](https://scholar.google.co.kr/citations?user=DqG-ybIAAAAJ&hl=ko)<sup>1</sup>, [**Dahyun Chung**](https://scholar.google.com/citations?user=EU52riMAAAAJ&hl=ko&oi=sra)<sup>2</sup>, [**Yeong-Seok Kim**]()<sup>3</sup>, [**Joonhyung Park**]()<sup>3</sup>, [**HeonJeong Chu**]()<sup>3</sup>, [**Seungryong Kim**](https://scholar.google.com/citations?user=cIK1hS8AAAAJ&hl=ko&oi=ao)<sup>1</sup>
+[**Siyoon Jin**](https://scholar.google.com/citations?user=rXRHxkwAAAAJ&hl=ko&oi=ao)<sup>1</sup>, [**Jisu Nam**](https://scholar.google.com/citations?user=xakYe8MAAAAJ&hl=en)<sup>1</sup>, [**Jiyoung Kim**](https://scholar.google.co.kr/citations?user=DqG-ybIAAAAJ&hl=ko)<sup>1</sup>, [**Dahyun Chung**](https://scholar.google.com/citations?user=EU52riMAAAAJ&hl=ko&oi=sra)<sup>2</sup>, 
+
+[**Yeong-Seok Kim**]()<sup>3</sup>, [**Joonhyung Park**]()<sup>3</sup>, [**HeonJeong Chu**]()<sup>3</sup>, [**Seungryong Kim**](https://scholar.google.com/citations?user=cIK1hS8AAAAJ&hl=ko&oi=ao)<sup>1</sup>
 
 <sup>1</sup> KAIST AI &emsp;&emsp;&emsp;&emsp; <sup>2</sup> Korea University &emsp;&emsp;&emsp;&emsp; <sup>3</sup> Hyundai Mobis
 
