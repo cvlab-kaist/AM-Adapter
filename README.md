@@ -74,7 +74,7 @@ validation:
 
     (2) Run the inference:
     ``` 
-    CUDA_VISIBLE_DEVICES=$DEVICE python inference.py
+    python inference.py
     ```
 
 
@@ -88,7 +88,7 @@ validation:
 
     (3) Run the inference:
     ```
-    CUDA_VISIBLE_DEVICES=$DEVICE python inference.py
+    python inference.py
     ```
 
     Note that, $M$ exemplars and $N$ segmentation maps together produces $MN$ results.
