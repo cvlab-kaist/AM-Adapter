@@ -1,0 +1,13 @@
+safetensors
+mlflow
+transformers==4.30.2
+accelerate
+omegaconf
+opencv-python
+einops
+av
+xformers
+torch==2.0.1
+numpy==1.26.4
+xformers==0.0.22
+bitsandbytes

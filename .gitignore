@@ -1,0 +1,16 @@
+checkpoints/
+*.png 
+mlruns/
+__pycache__
+bdd_0906/
+bdd_0830/
+inference_w_controlNet_etri.py 
+inference_w_controlNet_etri.sh
+retrieval/
+text_cos.py 
+test.py 
+before/
+configs/inference/
+configs/train/
+custom_data/
+iccv_reb/

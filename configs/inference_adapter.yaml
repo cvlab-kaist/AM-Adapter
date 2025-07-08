@@ -1,0 +1,35 @@
+base_model_path: "stable-diffusion-v1-5/stable-diffusion-v1-5" 
+vae_model_path: "stable-diffusion-v1-5/stable-diffusion-v1-5" 
+pretrained_unet_path : "/path/to/unet/model_1.safetensors"
+
+net:
+  appearance_unet_path : "/path/to/unet/model_1.safetensors"
+  semantic_unet_path : "/path/to/unet/model_1.safetensors" 
+  controlnext_path: "/path/to/controlnext/model.safetensors"
+  matcher_path : "/path/to/amadapter/matcher-25000.pth"
+
+
+noise_scheduler_kwargs:
+  num_train_timesteps: 1000
+  beta_start:          0.00085
+  beta_end:            0.012
+  beta_schedule:       "scaled_linear"
+  steps_offset:        1
+  clip_sample:         false
+
+data:
+  val_width: 512
+  val_height: 512 
+
+validation:
+  validation_seg_root_path : "/path/to/seg_tgt_root"
+  validation_real_root_path : "/path/to/real_img_root"
+  real_paths:
+    - "/path/to/real_paths"
+
+  seg_paths:
+    - "/path/to/seg_paths"
+  version : "individual"
+  retrieval_json_path : "/path/to/retrieval_json"
+  save_type : "triplet"
+output_dir : "/path/to/save"
